@@ -10,8 +10,8 @@
 #import <CommonCrypto/CommonDigest.h>
 #import <CommonCrypto/CommonHMAC.h>
 
-static NSString *apiKey = @"6D9gsmvjGOOldodgEsiIbDBCDlkZNYvngf9OiNmnV2aFPwiO3fUCTvNsuFuFHrFD";
-static NSString *apiSecret = @"arLC0Lfjg0s0Q07eD9Urulilah8M56fYdgTN9W7YXNkrKmmCeAiykEZajmIVtvzx";
+static NSString *apiKey = @"";
+static NSString *apiSecret = @"";
 
 @implementation PCNetworkClient
 
