@@ -15,6 +15,12 @@ static NSString *apiSecret = @"";
 
 @implementation PCNetworkClient
 
++ (void)setupApiKey:(NSString *)apiKey apiSecret:(NSString *)apiSecret
+{
+    apiKey = apiKey;
+    apiSecret = apiSecret;
+}
+
 + (void)GET:(NSString *)api parameters:(NSDictionary *)paraDict responseDataClass:(__unsafe_unretained Class)dataClass completion:(ResponseCompletion)completion
 {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];

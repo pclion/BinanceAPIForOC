@@ -21,6 +21,8 @@ typedef void(^ResponseCompletion)(NSError *error, id responseObj);
 
 @interface PCNetworkClient : NSObject
 
++ (void)setupApiKey:(NSString *)apiKey apiSecret:(NSString *)apiSecret;
+
 + (void)GET:(NSString *)api parameters:(NSDictionary *)paraDict responseDataClass:(__unsafe_unretained Class)dataClass completion:(ResponseCompletion)completion;
 
 + (void)POST:(NSString *)api parameters:(NSDictionary *)paraDict withSignature:(BOOL)flag responseDataClass:(Class)dataClass completion:(ResponseCompletion)completion;

@@ -11,11 +11,13 @@ binance-oc-api is a lightweight Object-C library for interacting with the [Binan
 
 There are three main client classes that can be used to interact with the API:
 
-1. [`PCNetworkClient`], an asynchronous [Binance API](https://www.binance.com/restapipub.html) client;
+ [`PCNetworkClient`], an asynchronous [Binance API](https://www.binance.com/restapipub.html) client;
 
 ```Object-C
+[PCNetworkClient setupApiKey:@"" apiSecret:@""];
 [PCNetworkClient lastPriceForAllSymbolWithCompletion:^(NSError *error, NSArray *responseObj) {
     self.symbolListArray = responseObj;
     [self.tableView reloadData];
 }];
 ```
+
